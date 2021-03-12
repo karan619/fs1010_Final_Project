@@ -1,0 +1,38 @@
+.nav-bar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  background: rgba(56, 56, 56, 0.7);
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-bar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.nav-bar ul li a {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 2.3vmin;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  transition: 0.8s;
+}
+
+.nav-bar ul li a:hover {
+  color: rgb(0, 163, 136);
+}
+
+@media only screen and (max-width: 780px) {
+  .nav-bar {
+    display: none;
+  }
+}

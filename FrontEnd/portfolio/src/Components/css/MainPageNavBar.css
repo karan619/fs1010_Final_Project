@@ -1,0 +1,40 @@
+.mainpage_nav-bar {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  background: rgba(56, 56, 56, 0.7);
+}
+
+.mainpage_nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.mainpage_nav-bar ul li {
+  margin: 0 1rem;
+  padding: 10px;
+}
+
+.mainpage_nav-bar ul li a {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  transition: 0.8s;
+}
+
+.mainpage_nav-bar ul li a:hover {
+  color: rgb(0, 163, 136);
+}
+
+@media only screen and (max-width: 780px) {
+  .mainpage_nav-bar {
+    display: none;
+  }
+}

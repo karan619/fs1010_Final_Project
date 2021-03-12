@@ -1,0 +1,75 @@
+/*Service Section*/
+
+.service-page {
+  background-image: url("../Images/What\ I\ D0_template_1\(1\).jpg");
+  min-height: 60vh;
+  min-width: 90vh;
+  background-size: cover;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.service-heading {
+  position: relative;
+  font-family: "Cinzel", serif;
+  font-size: 4vmin;
+  top: 5%;
+  padding-left: 20px;
+}
+
+.service-divider {
+  display: block;
+  position: relative;
+  top: 5%;
+  width: 100px;
+  height: 2px;
+  background-color: #00b7c7;
+  margin-left: 5rem;
+}
+
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 1%;
+  margin-top: 20px;
+}
+
+.service-row .service-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.row1 {
+  border-bottom: 1px solid rgba(242, 242, 242, 0.3);
+}
+
+.column1 {
+  border-left: 1px solid rgba(242, 242, 242, 0.3);
+}
+
+.service-text {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  word-spacing: 2px;
+}
+
+@media only screen and (max-width: 780px) {
+  .service-heading {
+    font-size: 6vmin;
+  }
+
+  .service-divider {
+    right: 6%;
+  }
+
+  .service-row .service-column {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    min-width: 60vh;
+    padding: 0px 25px;
+  }
+}

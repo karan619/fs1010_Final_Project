@@ -1,0 +1,54 @@
+.footer-page {
+  background-color: rgba(61, 116, 189, 0.925);
+}
+
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 41%;
+  padding: 40px 10px 40px 10px;
+}
+
+.footer-subheading {
+  position: relative;
+  margin: 10px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.3rem;
+  right: 2%;
+  color: white;
+}
+
+.footer-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.social-media {
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  padding: 12px;
+  transition: 1s;
+  color: white;
+}
+
+.social-media:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition-delay: 0.5s;
+}
+
+@media only screen and (max-width: 780px) {
+  .footer-page {
+    width: 100vh;
+  }
+
+  .footer-wrapper {
+    left: 25%;
+  }
+}

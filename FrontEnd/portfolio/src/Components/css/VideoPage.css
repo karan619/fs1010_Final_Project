@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cinzel:wght@600&display=swap");
+.mainpage-video {
+  object-fit: cover;
+  width: 100%;
+  min-height: 120vh;
+  position: fixed;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
+.intro-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.intro-content-Heading {
+  font-size: 4.2vmax;
+  position: absolute;
+  top: 34%;
+  font-family: "Cinzel", serif;
+  padding: 0px;
+  margin: 0px;
+  padding: 10px;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  color: #ffffff;
+}
+
+.intro-content-para {
+  font-family: "Lato", sans-serif;
+  font-size: 2.4vmax;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.down-arrow-wrapper {
+  color: #ffffff;
+  position: absolute;
+  top: 70%;
+}
+
+.down-arrow {
+  transition: 1s;
+  color: #ffffff;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  padding: 20px 0px;
+  border-radius: 6rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .intro-content-wrapper {
+    display: flex;
+    position: relative;
+    left: 10%;
+  }
+
+  .intro-content-Heading {
+    font-size: 5vmax;
+  }
+
+  .intro-content-para {
+    font-size: 3.3vmax;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 564px) {
+  .intro-content-wrapper {
+    display: flex;
+    position: relative;
+    left: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
