@@ -1,6 +1,6 @@
 import { emailValidate } from "../../util/emailValid";
 
-const contactVald = function (req, res, next) {
+const contactVald = (req, res, next) => {
   let errMsg = {
     message: "validation error",
     invalid: [],

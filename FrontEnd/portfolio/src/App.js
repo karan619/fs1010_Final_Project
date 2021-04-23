@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./Components/pages/Login";
 import HomePage from "./Components/HomePage";
 import PrivateRoute from "./Components/shared/PrivateRoute";
-import Listing from "./Components/pages/Listing";
+//import Listing from "./Components/pages/Listing";
+import AdminPortal from "./Components/pages/AdminPortal";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <Login />
           </Route>
           <PrivateRoute path="/submissions">
-            <Listing />
+            <AdminPortal />
           </PrivateRoute>
 
           <Route path="/" exact>

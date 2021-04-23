@@ -10,7 +10,7 @@ export default (req, res, next) => {
   try {
     const data = jwt.verify(token, process.env.JWT_SECRET);
     console.log(data);
-    req.user = data;
+    req.name = data;
     next();
     //throw Error(error);
   } catch (error) {

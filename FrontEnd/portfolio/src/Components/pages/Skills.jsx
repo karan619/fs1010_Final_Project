@@ -44,6 +44,19 @@ const Skills = () => {
             </div>
           </div>
         </div>
+
+        <div className="resume-button-wrapper">
+          <a
+            className="resume-link"
+            href="https://www.hiration.com/dieu/resume/karan19/pdf"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button className="resume-btn" variant="primary">
+              Check Out My Resume
+            </button>
+          </a>
+        </div>
       </section>
     </>
   );

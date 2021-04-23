@@ -8,8 +8,10 @@ import Footer from "../shared/Footer";
 
 const Login = () => {
   let history = useHistory();
-  const [username, setUsername] = useState("");
+
+  const [name, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
   const [auth, setAuth] = useState(true);
 
   const loginSubmit = async (event) => {
@@ -20,7 +22,7 @@ const Login = () => {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ name, password }),
     });
 
     const payload = await response.json();
@@ -68,7 +70,7 @@ const Login = () => {
               name="username"
               id="usernameEntry"
               className="login-input"
-              value={username}
+              value={name}
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Username"
               autoComplete="off"

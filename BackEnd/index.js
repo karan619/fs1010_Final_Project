@@ -1,13 +1,19 @@
 import express from "express";
 import cors from "cors";
+import fileUpload from "express-fileupload";
 import contactForm from "./routes/contact_form/entries";
+import projects from "./routes/projects/projects";
+import newUser from "./routes/users/users";
 import userAuth from "./routes/users/auth";
+import uploadFile from "./routes/file_upload/upload";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+
 app.use(cors());
+app.use(fileUpload());
 
 /*
 app.get("/", (req, res) => {
@@ -15,7 +21,10 @@ app.get("/", (req, res) => {
 });*/
 
 app.use("/contact_form/entries", contactForm);
+app.use("/projects", projects);
+app.use("/users", newUser);
 app.use("/auth", userAuth);
+app.use("/file-upload", uploadFile);
 
 app.use(function (error, req, res, next) {
   if (res.headersSent) {
